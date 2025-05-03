@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Webpage - HTML/CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <style>
+    /* General Reset */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: aquamarine;
+    }
+
+    /* Navigation Menu Styling */
+    nav {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      /* Removes default list dots */
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      /* Aligns the list items horizontally */
+      margin: 25px;
+      /* Adds space between the items */
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      /* Removes the underline from links */
+      font-size: 28px;
+    }
+
+    nav a:hover {
+      color: violet;
+      /* Changes text color when hovering */
+    }
+
+    /* Main Content Styling */
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: antiquewhite;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Image Styling */
+    .main-image {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* Form Styling */
+    form {
+      margin-top: 30px;
+    }
+
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="home">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="container">
+    <!-- Heading and Paragraph -->
+    <h1>Welcome to My Simple Webpage</h1>
+    <p>This webpage demonstrates the basic structure of HTML along with CSS styling to enhance its appearance. It
+      contains a heading, paragraph, image, form, and a navigation menu.</p>
+
+    <!-- Image -->
+    <img src="images/nature.avif" alt="Sample Image" class="main-image">
+
+    <!-- Form -->
+    <form>
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

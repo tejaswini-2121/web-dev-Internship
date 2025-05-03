@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple JS Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h2> Button Color Change </h2>
+
+  <button id="colorBtn">Change Color</button><br><br>
+
+
+  <script>
+    let colors = ["red", "green", "blue", "Yellow", "pink", "Black", "purple"];
+    let i = 0;
+    document.getElementById("colorBtn").onclick = function () {
+      this.style.backgroundColor = colors[i];
+      i = (i + 1) % colors.length;
+    };
+  </script>
+</body>
+
+</html>

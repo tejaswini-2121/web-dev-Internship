@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slideshow</title>
+  <style>
+    body{
+        background: black;
+        color: aliceblue;
+    }
+
+    .slideshow {
+      max-width: 300px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 9s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: auto;
+    }
+
+    @keyframes slide {
+      0%   { margin-left: 0%; }
+      33%  { margin-left: 0%; }
+      36%  { margin-left: -100%; }
+      66%  { margin-left: -100%; }
+      69%  { margin-left: -200%; }
+      99%  { margin-left: -200%; }
+      100% { margin-left: 0%; }
+    }
+  </style>
+</head>
+<body>
+    <h1>Simple image slideshow</h1>
+
+<div class="slideshow">
+  <div class="slides">
+    <img src="images/forest.webp" alt="forest">
+    <img src="images/Natures.avif" alt="Natures">
+    <img src="images/sunny beach.webp" alt="sunny beach">
+  </div>
+</div>
+
+</body>
+</html>
